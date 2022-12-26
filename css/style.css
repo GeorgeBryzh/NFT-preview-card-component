@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/outfit-regular.woff") format("woff");
+  font-weight: 400;
+}
+body {
+  margin: 0 auto;
+  height: 100vh;
+  background: hsl(217deg, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(215deg, 51%, 70%);
+}
+
+.card {
+  width: 325px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 27.5px;
+  padding-bottom: 10px;
+  background: hsl(216deg, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+@media screen and (min-width: 500px) {
+  .card {
+    padding-bottom: 15px;
+  }
+}
+
+.img__view {
+  width: 100%;
+  height: 100%;
+  transition: background-color 1s;
+}
+.img__view:hover {
+  background: url(../images/icon-view.svg) no-repeat center;
+  background-color: hsla(178deg, 100%, 50%, 0.377);
+  background-size: 15%;
+  cursor: pointer;
+}
+
+.nft__img {
+  width: 275px;
+  height: 275px;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: 100%, 100%;
+  border-radius: 7.5px;
+  overflow: hidden;
+  align-self: center;
+}
+.nft__name {
+  font-family: "Outfit";
+  margin-top: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  transition: color 0.2s;
+}
+.nft__name:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+.nft__description {
+  margin-top: 0px;
+  font-size: 1.1rem;
+  font-weight: 200;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 500px) {
+  .nft__description {
+    margin-bottom: 10px;
+  }
+}
+.nft__price-and-time {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px hsl(215deg, 32%, 27%) solid;
+}
+@media screen and (max-width: 500px) {
+  .nft__price-and-time {
+    margin-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .nft__price-and-time {
+    padding-bottom: 15px;
+  }
+}
+.nft__price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nft__upload-data {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nft__author {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.price__value {
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 600;
+}
+
+span {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.author__avatar {
+  display: block;
+  box-sizing: border-box;
+  border: solid 1px white;
+  border-radius: 50%;
+  width: 30px;
+  height: 100%;
+}
+.author__desc {
+  align-self: center;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.author__full-name {
+  color: white;
+  transition: color 0.2s;
+}
+.author__full-name:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
